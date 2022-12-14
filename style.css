@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Syne:wght@700;800&display=swap");
+
+:root {
+  --color-primary: rgb(248, 155, 28);
+  --color-secondary: rgb(248, 183, 28);
+  --color-accent: #00579f;
+  --color-dark: #080808;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Syne", sans-serif;
+}
+
+.main-heading span {
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-primary)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-container p {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+/* BUTTON CSS */
+
+.cssbuttons-io-button {
+  background: var(--color-secondary);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--color-primary);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--color-primary);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--color-primary);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* BG ELEMENTS */
+.bg-elements {
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: updown 3s ease-in-out infinite;
+}
+
+.circle-left {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  filter: blur(60px);
+  opacity: 0.2;
+  transform: translate(-60%, -50%);
+}
+
+.circle-right {
+  position: absolute;
+  top: 20vh;
+  right: 0;
+  filter: blur(60px);
+  opacity: 0.2;
+  transform: translate(70%, -60%);
+}
+
+@keyframes updown {
+  0% {
+    filter: blur(60px);
+  }
+  50% {
+    filter: blur(20px);
+  }
+  100% {
+    filter: blur(60px);
+  }
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}

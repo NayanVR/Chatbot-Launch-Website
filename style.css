@@ -21,8 +21,16 @@ body {
   padding: 0;
 }
 
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20rem;
+}
+
 .main-container {
-  width: 100%;
+  width: 50%;
   height: max-content;
   padding: 15rem 0;
   display: flex;
@@ -41,12 +49,9 @@ body {
 }
 
 .main-heading span {
-  font-weight: 800;
-  background: linear-gradient(
-    to right,
-    var(--color-secondary),
-    var(--color-primary)
-  );
+  background: linear-gradient(to right,
+      var(--color-secondary),
+      var(--color-primary));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -56,6 +61,12 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+.hero-image {
+  height: 40rem;
+  align-self: flex-end;
+}
+
 /* BUTTON CSS */
 
 .cssbuttons-io-button {
@@ -153,9 +164,11 @@ body {
   0% {
     filter: blur(60px);
   }
+
   50% {
     filter: blur(20px);
   }
+
   100% {
     filter: blur(60px);
   }

@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Launch Of GSFC Chat Bot</title>
+    <title>Launch Of GSFC Virtual Assistant</title>
     <link rel="stylesheet" href="style.css" />
     <!-- <link rel="stylesheet" href="cards.css" /> -->
   </head>
   <body>
     <div class="circle circle-left"></div>
     <div class="circle circle-right"></div>
+    <h1 class="main-heading title" style="color: white;">Launch of GSFCU Virtual Assistant</h1>
     <main>
       <div class="main-container">
         <h1 class="main-heading" style="text-align: left;">
-          Ask your query<br />with glory to <span>Chat Bot</span>
+            Ask your query with glory to <span><br/>GSFCU Virtual Assistant</span>
         </h1>
         <p>
           Getting information about GSFC University now got better with the
-          chatbot - Atharva.<br />Ask your queries and get the answers
+          GSFCU Virtual Assistant.<br />Ask your queries and get the answers
           instantly.
         </p>
-        <button class="cssbuttons-io-button">
-          Get started
+        <button class="cssbuttons-io-button" id="btn">
+          Start Here
           <div class="icon">
             <svg
               height="24"
@@ -42,7 +43,7 @@
       <img class="hero-image" src="./src/p-k-taneja.png">
     </main>
 
-    <section id="team" style="padding-top: 5rem; border-top: 2px solid #ccc;">
+    <section id="team" style="padding: 5rem 0; border-top: 2px solid #ccc;">
       <h1 class="main-heading mb-3">Meet the <span>Team</span></h1>
       <div class="cards">
         <div class="card">
@@ -139,5 +140,10 @@
         </figure>
       </div> -->
     </section>
+    <script>
+      document.querySelector("#btn").addEventListener('click', (e) => {
+        window.location = "https://gsfcuni.edu.in"
+      })
+    </script>
   </body>
 </html>

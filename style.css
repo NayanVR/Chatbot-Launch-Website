@@ -21,9 +21,14 @@ body {
   padding: 0;
 }
 
+.title {
+  background-color: var(--color-primary);
+  padding: 3rem 0;
+}
+
 main {
   width: 100vw;
-  height: 50vh;
+  height: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
